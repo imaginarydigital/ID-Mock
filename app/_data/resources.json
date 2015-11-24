@@ -1,0 +1,23 @@
+{
+  "sites": [
+    {
+      "title":"W3C",
+      "url":"http://www.w3.org/",
+      "description":"<a href=\"http://w3c.org\">The World Wide Web Consortium (W3C)</a> is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards. Led by Web inventor Tim Berners-Lee and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential. Contact W3C for more information."
+    },
+    {
+      "title":"Smashing Magazine",
+      "url":"http://www.smashingmagazine.com/",
+      "description":"Founded in September 2006, Smashing Magazine delivers useful and innovative information to Web designers and developers. Our aim is to inform our readers about the latest trends and techniques in Web development. We try to persuade you not with the quantity, but with the quality of the information we present. Smashing Magazine is, and always has been, independent."
+    },
+    {
+      "title":"Position Absolute",
+      "url":"http://www.position-absolute.com/"
+    },
+    {
+      "title":"jQuery",
+      "url":"http://www.position-absolute.com/",
+      "description":"jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript."
+    }
+  ]
+}

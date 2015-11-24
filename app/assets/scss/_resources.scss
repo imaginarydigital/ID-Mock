@@ -1,0 +1,22 @@
+body {
+  @extend .font1;
+  margin: 0;
+  padding: 0;
+}
+.resources {
+  nav {
+    background: #333333;
+  }
+  h1 {
+    border-bottom: solid 3px #333333;
+  }
+  .container {
+    margin-top: 60px;
+  }
+  .site {
+    border-bottom: solid 1px #333333;
+    border-bottom-style: dashed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

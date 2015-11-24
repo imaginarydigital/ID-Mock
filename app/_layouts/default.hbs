@@ -1,0 +1,66 @@
+{{#prettify}}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="{{page.meta.description}}">
+    <meta name="keywords" content="{{page.meta.keywords}}">
+    <title>{{#if page.title}}{{page.title}} - {{site.title}}{{else}}{{site.title}}{{/if}}</title>
+    <link rel="canonical" href="{{page.meta.canonical}}">
+
+    <!--- Facebook share -->
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="{{page.title}}">
+    <meta property="og:description" content="{{page.meta.description}}">
+    <meta property="og:image" content="{{page.meta.image}}">
+    <meta property="og:url" content="{{page.meta.url}}">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="{{page.meta.creator}}">
+    <meta name="twitter:title" content="{{page.meta.title}}">
+    <meta name="twitter:description" content="{{page.meta.description}}">
+    <meta name="twitter:image" content="{{page.meta.image}}">
+
+    <!-- Stylesheets -->
+    {{#block "styles"}}
+    <link rel="stylesheet" href="{{baseurl}}css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="{{baseurl}}css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="{{baseurl}}css/wireframe.css">
+    <link rel="stylesheet" href="{{baseurl}}css/main.css">
+    {{/block}}
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lora:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic' rel='stylesheet' type='text/css'>
+
+    <!-- Scripts -->
+    {{#block "topscripts"}}
+    <!-- script type="text/javascript" src="//use.typekit.net/odr4qbu.js"></script -->
+    <!-- script type="text/javascript">try{Typekit.load();}catch(e){}</script -->
+    {{/block}}
+  </head>
+  <!--[if IE 9]><body class="{{page.body-class}} ie9 in-mobile"><![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--><body class="{{page.body-class}} in-mobile"><!--<![endif]-->
+  <!--[if lt IE 9]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+
+    {{> nav-skip}}
+    {{> nav-main}}
+
+    {{#block "body"}}
+      {{> body}}
+    {{/block}}
+    
+    {{> footer}}
+
+    {{#block "bottomscripts"}}
+    <script type="text/javascript" src="{{baseurl}}js/vendor.js"></script>
+    <script type="text/javascript" src="{{baseurl}}js/main.js"></script>
+    {{/block}}
+
+  </body>
+</html>
+{{/prettify}}
