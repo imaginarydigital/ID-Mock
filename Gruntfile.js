@@ -96,15 +96,18 @@ module.exports = function(grunt) {
       },
       dev: {
         src: [  // common files
-          '<%= config.src %>/assets/js/app.js'
-          // '<%= config.src %>/assets/js/example-2.js',
+          '<%= config.src %>/assets/js/app.js',
+          '<%= config.src %>/assets/js/routes.js',
+          '<%= config.src %>/assets/js/controller.js'
         ],
         dest: '<%= config.dev %>/js/main.js'
       },
       vendor: {
         src: [  // vendor files
           '<%= config.src %>/assets/js/vendor/jquery-2.1.1.min.js',
-          '<%= config.src %>/assets/js/vendor/bootstrap.min.js',
+          '<%= config.src %>/assets/js/vendor/angular.min.js',
+          '<%= config.src %>/assets/js/vendor/angular-route.min.js',
+          '<%= config.src %>/assets/js/vendor/bootstrap.min.js'
         ],
         dest: '<%= config.dev %>/js/vendor.js'
       }
@@ -146,15 +149,14 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: '<%= config.src %>/',
-            src: ['*.hbs', '_mock/*.hbs'],
+            src: ['*.hbs'],
             dest: '<%= config.dev %>'
           },
           {
-            options: {layout: 'post.hbs'},
             expand: true,
-            cwd: '<%= config.src %>/blog',
+            cwd: '<%= config.src %>/views',
             src: ['*.hbs'],
-            dest: '<%= config.dev %>/blog/'
+            dest: '<%= config.dev %>/views/'
           }
         ]
       }

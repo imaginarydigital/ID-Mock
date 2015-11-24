@@ -1,17 +1,3 @@
-/*
- * ID Mock - r0.1.0
- * 2015-11-24 */
-
- angular.module('app', [
-  'ngRoute'
-]);
-angular.module('app').config(function($interpolateProvider) {
-  $interpolateProvider.startSymbol('{[{');
-  $interpolateProvider.endSymbol('}]}');
-});
-
-
-
 // Route configurations
 angular.module('app').config(['$routeProvider', function ($routeProvider){
   $routeProvider.when('/', {
@@ -34,10 +20,3 @@ angular.module('app').config(['$routeProvider', function ($routeProvider){
     redirectTo: '/'
   });
 }]);
-
-function MainController ($scope){
-	$scope.hello = 'hello';
-	console.log($scope.hello);
-}
-
-angular.module('app').controller('MainController', ['$scope', MainController]);

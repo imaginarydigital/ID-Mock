@@ -1,5 +1,7 @@
+html, body { overflow-x: hidden; }
+
 .img-carousel{
-	background-image: url("../images/mock-header.jpg");
+	background-image: url("http://placehold.it/1000x1000");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -13,6 +15,56 @@ section{
 	height: 300px;
 }
 
-.h2{
+h2{
 	text-decoration: underline;
+	text-align: center;
 }
+
+section p{
+	text-align: center;
+	padding: 10px;
+}
+
+section ul{
+	text-align: center;
+}
+
+section {
+	.content {
+		text-align: center;
+		margin-top: 30px; 
+	}
+
+	.btn{
+		margin-top: 20px;
+	}
+}
+
+.photography{
+	img{
+		border: 1px solid black;
+	}
+}
+
+a{
+	color: black;
+}
+
+
+.contact {
+	.btn{
+		margin-bottom: 20px;
+	}
+	li{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+// .photography,
+// .video,
+// .web{
+// 	border: 1px solid black;
+// }
+
+

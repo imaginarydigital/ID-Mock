@@ -54,8 +54,13 @@
 }
 
 /* line 1, ../../app/assets/scss/_mock.scss */
+html, body {
+  overflow-x: hidden;
+}
+
+/* line 3, ../../app/assets/scss/_mock.scss */
 .img-carousel {
-  background-image: url("../images/mock-header.jpg");
+  background-image: url("http://placehold.it/1000x1000");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,14 +70,56 @@
   height: 400px;
 }
 
-/* line 12, ../../app/assets/scss/_mock.scss */
+/* line 14, ../../app/assets/scss/_mock.scss */
 section {
   height: 300px;
 }
 
-/* line 16, ../../app/assets/scss/_mock.scss */
-.h2 {
+/* line 18, ../../app/assets/scss/_mock.scss */
+h2 {
   text-decoration: underline;
+  text-align: center;
+}
+
+/* line 23, ../../app/assets/scss/_mock.scss */
+section p {
+  text-align: center;
+  padding: 10px;
+}
+
+/* line 28, ../../app/assets/scss/_mock.scss */
+section ul {
+  text-align: center;
+}
+
+/* line 33, ../../app/assets/scss/_mock.scss */
+section .content {
+  text-align: center;
+  margin-top: 30px;
+}
+/* line 38, ../../app/assets/scss/_mock.scss */
+section .btn {
+  margin-top: 20px;
+}
+
+/* line 44, ../../app/assets/scss/_mock.scss */
+.photography img {
+  border: 1px solid black;
+}
+
+/* line 49, ../../app/assets/scss/_mock.scss */
+a {
+  color: black;
+}
+
+/* line 55, ../../app/assets/scss/_mock.scss */
+.contact .btn {
+  margin-bottom: 20px;
+}
+/* line 58, ../../app/assets/scss/_mock.scss */
+.contact li {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* line 1, ../../app/assets/scss/_resources.scss */
