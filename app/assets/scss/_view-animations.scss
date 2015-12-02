@@ -1,4 +1,21 @@
-.animate-view-container { position:relative; min-height: 900px; }
+.animate-view-container { 
+	position:relative; 
+	min-height: 900px;
+	overflow: hidden; 
+  background-color: white;
+}
+
+.view-section{
+  padding: 50px;
+
+  .btn{
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  p{
+    padding: 20px;
+  }
+}
 // .animate-view.ng-enter,
 // .animate-view.ng-leave {
 //         transition:1s linear all;

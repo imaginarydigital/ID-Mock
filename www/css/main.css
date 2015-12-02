@@ -57,9 +57,25 @@
 .animate-view-container {
   position: relative;
   min-height: 900px;
+  overflow: hidden;
+  background-color: white;
 }
 
-/* line 43, ../../app/assets/scss/_view-animations.scss */
+/* line 8, ../../app/assets/scss/_view-animations.scss */
+.view-section {
+  padding: 50px;
+}
+/* line 11, ../../app/assets/scss/_view-animations.scss */
+.view-section .btn {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+/* line 15, ../../app/assets/scss/_view-animations.scss */
+.view-section p {
+  padding: 20px;
+}
+
+/* line 60, ../../app/assets/scss/_view-animations.scss */
 .from-left,
 .from-right {
   position: absolute;
@@ -71,7 +87,7 @@
   height: 900px;
 }
 
-/* line 54, ../../app/assets/scss/_view-animations.scss */
+/* line 71, ../../app/assets/scss/_view-animations.scss */
 .from-left.ng-enter,
 .from-right.ng-enter,
 .from-left.ng-leave,
@@ -82,48 +98,60 @@
   transition: all 1s ease;
 }
 
-/* line 63, ../../app/assets/scss/_view-animations.scss */
+/* line 80, ../../app/assets/scss/_view-animations.scss */
 .from-left.ng-enter {
   left: -100%;
   z-index: 100;
 }
 
-/* line 67, ../../app/assets/scss/_view-animations.scss */
+/* line 84, ../../app/assets/scss/_view-animations.scss */
 .from-left.ng-enter-active {
   left: 0;
 }
 
-/* line 70, ../../app/assets/scss/_view-animations.scss */
+/* line 87, ../../app/assets/scss/_view-animations.scss */
 .from-left.ng-leave {
   left: 0;
   z-index: 99;
 }
 
-/* line 74, ../../app/assets/scss/_view-animations.scss */
+/* line 91, ../../app/assets/scss/_view-animations.scss */
 .from-left.ng-leave-active {
   left: -100%;
 }
 
-/* line 78, ../../app/assets/scss/_view-animations.scss */
+/* line 95, ../../app/assets/scss/_view-animations.scss */
 .from-right.ng-enter {
   left: 100%;
   z-index: 100;
 }
 
-/* line 82, ../../app/assets/scss/_view-animations.scss */
+/* line 99, ../../app/assets/scss/_view-animations.scss */
 .from-right.ng-enter-active {
   left: 0;
 }
 
-/* line 85, ../../app/assets/scss/_view-animations.scss */
+/* line 102, ../../app/assets/scss/_view-animations.scss */
 .from-right.ng-leave {
   left: 0;
   z-index: 99;
 }
 
-/* line 89, ../../app/assets/scss/_view-animations.scss */
+/* line 106, ../../app/assets/scss/_view-animations.scss */
 .from-right.ng-leave-active {
   left: 100%;
+}
+
+/* line 1, ../../app/assets/scss/_video.scss */
+.video-container {
+  position: relative;
+  height: 400px;
+}
+
+/* line 6, ../../app/assets/scss/_video.scss */
+video {
+  position: absolute;
+  width: 100%;
 }
 
 /* line 1, ../../app/assets/scss/_mock.scss */

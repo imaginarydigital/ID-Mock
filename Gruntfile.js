@@ -63,7 +63,9 @@ module.exports = function(grunt) {
           dot: true,
           src: [
             '.tmp',
-            '<%= config.dev %>/*'
+            '<%= config.dev %>/*',
+            '!<%= config.dev %>/video',
+
           ]
         }]
       }
