@@ -107,6 +107,7 @@ module.exports = function(grunt) {
           '<%= config.src %>/assets/js/vendor/jquery-2.1.1.min.js',
           '<%= config.src %>/assets/js/vendor/angular.min.js',
           '<%= config.src %>/assets/js/vendor/angular-route.min.js',
+          '<%= config.src %>/assets/js/vendor/angular-animate.min.js',
           '<%= config.src %>/assets/js/vendor/bootstrap.min.js'
         ],
         dest: '<%= config.dev %>/js/vendor.js'

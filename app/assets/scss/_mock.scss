@@ -1,4 +1,9 @@
-html, body { overflow-x: hidden; }
+html, body { 
+	overflow-x: hidden;
+	position: relative;
+	min-height: 100%;
+
+ }
 
 .img-carousel{
 	background-image: url("http://placehold.it/1000x1000");
