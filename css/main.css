@@ -53,6 +53,58 @@
   font-weight: 700;
 }
 
+/* line 1, ../../app/assets/scss/_base.scss */
+.row {
+  margin-bottom: 0 !important;
+}
+
+/* line 5, ../../app/assets/scss/_base.scss */
+.row.page-content {
+  height: 300px;
+}
+
+/* line 9, ../../app/assets/scss/_base.scss */
+.row .col {
+  padding: 0 0 !important;
+}
+
+/* line 13, ../../app/assets/scss/_base.scss */
+.col {
+  height: 100%;
+}
+
+/* line 17, ../../app/assets/scss/_base.scss */
+footer.page-footer {
+  margin-top: 0 !important;
+}
+
+/* line 21, ../../app/assets/scss/_base.scss */
+footer.page-footer ul li {
+  margin-left: 20px;
+  display: inline;
+}
+
+/* line 26, ../../app/assets/scss/_base.scss */
+footer.page-footer .footer-copyright {
+  background-color: transparent;
+}
+
+/* line 30, ../../app/assets/scss/_base.scss */
+.page-content ul li {
+  display: inline;
+}
+
+/* line 34, ../../app/assets/scss/_base.scss */
+section {
+  width: 100%;
+}
+
+/* line 38, ../../app/assets/scss/_base.scss */
+h2 {
+  margin: 0px 0px 0px !important;
+  padding: 1rem 0px 1rem;
+}
+
 /* line 1, ../../app/assets/scss/_view-animations.scss */
 .animate-view-container {
   position: relative;
@@ -100,55 +152,80 @@
 
 /* line 80, ../../app/assets/scss/_view-animations.scss */
 .from-left.ng-enter {
-  left: -100%;
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
   z-index: 100;
 }
 
 /* line 84, ../../app/assets/scss/_view-animations.scss */
 .from-left.ng-enter-active {
-  left: 0;
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 /* line 87, ../../app/assets/scss/_view-animations.scss */
 .from-left.ng-leave {
-  left: 0;
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
   z-index: 99;
 }
 
 /* line 91, ../../app/assets/scss/_view-animations.scss */
 .from-left.ng-leave-active {
-  left: -100%;
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
 }
 
 /* line 95, ../../app/assets/scss/_view-animations.scss */
 .from-right.ng-enter {
-  left: 100%;
+  -moz-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
   z-index: 100;
 }
 
 /* line 99, ../../app/assets/scss/_view-animations.scss */
 .from-right.ng-enter-active {
-  left: 0;
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 /* line 102, ../../app/assets/scss/_view-animations.scss */
 .from-right.ng-leave {
-  left: 0;
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
   z-index: 99;
 }
 
 /* line 106, ../../app/assets/scss/_view-animations.scss */
 .from-right.ng-leave-active {
-  left: 100%;
+  -moz-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
 }
 
 /* line 1, ../../app/assets/scss/_video.scss */
 .video-container {
   position: relative;
   height: 400px;
+  padding-bottom: 400px !important;
 }
 
-/* line 6, ../../app/assets/scss/_video.scss */
+/* line 7, ../../app/assets/scss/_video.scss */
 video {
   position: absolute;
   width: 100%;
@@ -161,68 +238,36 @@ html, body {
   min-height: 100%;
 }
 
-/* line 8, ../../app/assets/scss/_mock.scss */
-.img-carousel {
-  background-image: url("http://placehold.it/1000x1000");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: 400px;
-}
-
-/* line 19, ../../app/assets/scss/_mock.scss */
-section {
-  height: 300px;
-}
-
-/* line 23, ../../app/assets/scss/_mock.scss */
+/* line 10, ../../app/assets/scss/_mock.scss */
 h2 {
-  text-decoration: underline;
   text-align: center;
 }
 
-/* line 28, ../../app/assets/scss/_mock.scss */
+/* line 15, ../../app/assets/scss/_mock.scss */
 section p {
   text-align: center;
   padding: 10px;
 }
 
-/* line 33, ../../app/assets/scss/_mock.scss */
+/* line 20, ../../app/assets/scss/_mock.scss */
 section ul {
   text-align: center;
 }
 
-/* line 38, ../../app/assets/scss/_mock.scss */
-section .content {
-  text-align: center;
-  margin-top: 30px;
-}
-/* line 43, ../../app/assets/scss/_mock.scss */
-section .btn {
-  margin-top: 20px;
-}
-
-/* line 49, ../../app/assets/scss/_mock.scss */
-.photography img {
-  border: 1px solid black;
-}
-
-/* line 54, ../../app/assets/scss/_mock.scss */
+/* line 24, ../../app/assets/scss/_mock.scss */
 a {
   color: black;
 }
 
-/* line 60, ../../app/assets/scss/_mock.scss */
+/* line 30, ../../app/assets/scss/_mock.scss */
 .contact .btn {
   margin-bottom: 20px;
 }
-/* line 63, ../../app/assets/scss/_mock.scss */
+/* line 33, ../../app/assets/scss/_mock.scss */
 .contact li {
   padding-left: 20px;
   padding-right: 20px;
+  display: inline;
 }
 
 /* line 1, ../../app/assets/scss/_resources.scss */
