@@ -5,23 +5,10 @@ html, body {
 
  }
 
-.img-carousel{
-	background-image: url("http://placehold.it/1000x1000");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
- 	-o-background-size: cover;
-	height: 400px;
-}
 
-section{
-	height: 300px;
-}
 
 h2{
-	text-decoration: underline;
+	
 	text-align: center;
 }
 
@@ -32,23 +19,6 @@ section p{
 
 section ul{
 	text-align: center;
-}
-
-section {
-	.content {
-		text-align: center;
-		margin-top: 30px; 
-	}
-
-	.btn{
-		margin-top: 20px;
-	}
-}
-
-.photography{
-	img{
-		border: 1px solid black;
-	}
 }
 
 a{
@@ -63,13 +33,7 @@ a{
 	li{
 		padding-left: 20px;
 		padding-right: 20px;
+		display: inline;
 	}
 }
-
-// .photography,
-// .video,
-// .web{
-// 	border: 1px solid black;
-// }
-
 

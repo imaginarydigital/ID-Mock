@@ -100,7 +100,8 @@ module.exports = function(grunt) {
         src: [  // common files
           '<%= config.src %>/assets/js/app.js',
           '<%= config.src %>/assets/js/routes.js',
-          '<%= config.src %>/assets/js/controller.js'
+          '<%= config.src %>/assets/js/controller.js',
+          '<%= config.src %>/assets/js/modal-trigger.js'
         ],
         dest: '<%= config.dev %>/js/main.js'
       },
@@ -110,7 +111,8 @@ module.exports = function(grunt) {
           '<%= config.src %>/assets/js/vendor/angular.min.js',
           '<%= config.src %>/assets/js/vendor/angular-route.min.js',
           '<%= config.src %>/assets/js/vendor/angular-animate.min.js',
-          '<%= config.src %>/assets/js/vendor/bootstrap.min.js'
+          '<%= config.src %>/assets/js/vendor/materialize.min.js'
+          // '<%= config.src %>/assets/js/vendor/bootstrap.min.js'
         ],
         dest: '<%= config.dev %>/js/vendor.js'
       }
@@ -215,12 +217,12 @@ module.exports = function(grunt) {
             src: ['**'],
             dest: '<%= config.dev %>/fonts'
           },
-          {
-            expand: true,
-            cwd: '<%= config.src %>/assets/css/vendor/',
-            src: 'bootstrap.min.css',
-            dest: '<%= config.dev %>/css/vendor'
-          },
+          // {
+          //   expand: true,
+          //   cwd: '<%= config.src %>/assets/css/vendor/',
+          //   src: 'bootstrap.min.css',
+          //   dest: '<%= config.dev %>/css/vendor'
+          // },
           {
             expand: true,
             cwd: '<%= config.src %>/assets/css/vendor/',

@@ -1,6 +1,6 @@
 /*
  * ID Mock - r0.1.0
- * 2015-12-01 */
+ * 2015-12-06 */
 
  angular.module('app', [
   'ngRoute',
@@ -42,7 +42,6 @@ angular.module('app').config(['$routeProvider', function ($routeProvider){
 }]);
 
 function MainController ($scope, $location){
-	$scope.hello = 'hello';
 	console.log($scope.hello);
 }
 
@@ -75,3 +74,19 @@ angular.module('app').directive('viewAnimation', function ($route) {
     }
   };
 });
+
+ //  <div id="modal1" class="modal bottom-sheet">
+ //    <div class="modal-content">
+ //      <h4>Modal Header</h4>
+ //      <p>A bunch of text</p>
+ //    </div>
+ //    <div class="modal-footer">
+ //      <button href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</button>
+ //    </div>
+ //  </div>
+ // 
+
+$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });

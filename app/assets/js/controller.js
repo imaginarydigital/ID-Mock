@@ -1,5 +1,4 @@
 function MainController ($scope, $location){
-	$scope.hello = 'hello';
 	console.log($scope.hello);
 }
 
@@ -32,3 +31,14 @@ angular.module('app').directive('viewAnimation', function ($route) {
     }
   };
 });
+
+ //  <div id="modal1" class="modal bottom-sheet">
+ //    <div class="modal-content">
+ //      <h4>Modal Header</h4>
+ //      <p>A bunch of text</p>
+ //    </div>
+ //    <div class="modal-footer">
+ //      <button href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</button>
+ //    </div>
+ //  </div>
+ // 

@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Mockup</title>
-   <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+   {{!-- <link rel="stylesheet" href="css/vendor/bootstrap.min.css"> --}}
+   <link rel="stylesheet" href="css/materialize.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="css/main.css">
 </head>
@@ -32,46 +33,40 @@
 </div>
 
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-12 contact-col" style="background-color: gray">
-    <section class="contact">
+
+  <footer class="page-footer valign-wrapper">
+    <div class="row">
       <h2>Contact</h2>
-      <div class="content">
-        <a href="" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bs-example-modal-lg">Send Us A Message</a>
-        <ul class="list-inline">
-        <li><a href=""><i class="fa fa-5x fa-facebook-official"></i></a></li>
-        <li><a href=""><i class="fa fa-5x fa-instagram"></i></a></li>
-        <li><a href=""><i class="fa fa-5x fa-youtube-square"></i></a></li>
-        <li><a href=""><i class="fa fa-5x fa-envelope-o"></i></a></li>
-      </ul>
+      <div class="valign center-align">
+        <button data-target="modal1" class="waves-effect waves-light btn modal-trigger">Send Us A Message</button>
+        <ul>
+          <li><a href=""><i class="fa fa-5x fa-facebook-official"></i></a></li>
+          <li><a href=""><i class="fa fa-5x fa-instagram"></i></a></li>
+          <li><a href=""><i class="fa fa-5x fa-youtube-square"></i></a></li>
+          <li><a href=""><i class="fa fa-5x fa-envelope-o"></i></a></li>
+       </ul>
+       <div class="footer-copyright">
+            © 2015 Imaginary Digital
       </div>
-    </section>
+    </div>
+  </footer>
+
+
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <button href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</button>
     </div>
   </div>
-</div>
+ 
+    
   
 
 
-  {{!-- modal --}}
-    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Contact Form</h4>
-          </div>
-          <div class="modal-body">
-            <p>Fill out the form bitch boy&hellip;</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div>
-  {{!-- /.modal --}}
+  
 
 
 

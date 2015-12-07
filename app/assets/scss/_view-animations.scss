@@ -78,32 +78,32 @@
   transition: all 1s ease;
 }
 .from-left.ng-enter {
-  left: -100%;
+  @include transform(translate(-100%, 0));
   z-index:100; 
 }
 .from-left.ng-enter-active {
-  left: 0;
+   @include transform(translate(0, 0));
 }
 .from-left.ng-leave {
-  left: 0;
+  @include transform(translate(0, 0));
   z-index:99; 
 }
 .from-left.ng-leave-active {
-  left: -100%;
+  @include transform(translate(-100%, 0));
 }
 
 .from-right.ng-enter {
-  left: 100%;
+  @include transform(translate(100%, 0));
   z-index:100; 
 }
 .from-right.ng-enter-active {
-  left: 0;
+  @include transform(translate(0, 0));
 }
 .from-right.ng-leave {
-  left: 0;
+  @include transform(translate(0, 0));
   z-index:99; 
 }
 .from-right.ng-leave-active {
-  left: 100%;
+  @include transform(translate(100%, 0));
 }
 
