@@ -1,77 +1,326 @@
-/*
-Error: wrong number of arguments (5 for 4) for `rgba'
-        on line 18 of /Users/JayTee/Documents/ID-Materialize/app/assets/scss/_video.scss
-        from line 7 of /Users/JayTee/Documents/ID-Materialize/app/assets/scss/main.scss
+/**
+ * To use this font use these fonts:
+ * @extend <classname>
+ *
+ * .some-example-class {
+ *    @extend .font1-ebold;
+ * }
+ *
+ */
+/* line 17, ../../app/assets/scss/_fonts.scss */
+.font1, .font1-light, .font1-sbold, .font1-bold, .font1-ebold, body {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2em;
+}
 
-Backtrace:
-/Users/JayTee/Documents/ID-Materialize/app/assets/scss/_video.scss:18
-/Users/JayTee/Documents/ID-Materialize/app/assets/scss/main.scss:7
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/funcall.rb:303:in `reformat_argument_error'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/funcall.rb:146:in `rescue in _perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/funcall.rb:123:in `_perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/node.rb:50:in `perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:326:in `block (2 levels) in visit_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:326:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:88:in `with_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:20:in `render'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:278:in `render'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
-/usr/local/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-/usr/local/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-/usr/local/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/usr/local/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/usr/local/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-/usr/local/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:44:in `call'
-/usr/local/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-/usr/local/bin/compass:23:in `load'
-/usr/local/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: wrong number of arguments (5 for 4) for `rgba'\A         on line 18 of /Users/JayTee/Documents/ID-Materialize/app/assets/scss/_video.scss\A         from line 7 of /Users/JayTee/Documents/ID-Materialize/app/assets/scss/main.scss"; }
+/* line 24, ../../app/assets/scss/_fonts.scss */
+.font1-light {
+  font-weight: 300;
+}
+
+/* line 29, ../../app/assets/scss/_fonts.scss */
+.font1-sbold {
+  font-weight: 600;
+}
+
+/* line 34, ../../app/assets/scss/_fonts.scss */
+.font1-bold {
+  font-weight: 700;
+}
+
+/* line 39, ../../app/assets/scss/_fonts.scss */
+.font1-ebold {
+  font-weight: 800;
+}
+
+/* line 49, ../../app/assets/scss/_fonts.scss */
+.font2, .font2-light, .font2-bold {
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+/* line 56, ../../app/assets/scss/_fonts.scss */
+.font2-light {
+  font-weight: 300;
+}
+
+/* line 61, ../../app/assets/scss/_fonts.scss */
+.font2-bold {
+  font-weight: 700;
+}
+
+/* line 1, ../../app/assets/scss/_base.scss */
+.row {
+  margin-bottom: 0 !important;
+}
+
+/* line 5, ../../app/assets/scss/_base.scss */
+.row.page-content {
+  height: 300px;
+}
+
+/* line 9, ../../app/assets/scss/_base.scss */
+.row .col {
+  padding: 0 0 !important;
+}
+
+/* line 13, ../../app/assets/scss/_base.scss */
+.col {
+  height: 100%;
+}
+
+/* line 17, ../../app/assets/scss/_base.scss */
+footer.page-footer {
+  margin-top: 0 !important;
+}
+
+/* line 21, ../../app/assets/scss/_base.scss */
+footer.page-footer ul li {
+  margin-left: 20px;
+  display: inline;
+}
+
+/* line 26, ../../app/assets/scss/_base.scss */
+footer.page-footer .footer-copyright {
+  background-color: transparent;
+}
+
+/* line 30, ../../app/assets/scss/_base.scss */
+.page-content ul li {
+  display: inline;
+}
+
+/* line 34, ../../app/assets/scss/_base.scss */
+section {
+  width: 100%;
+}
+
+/* line 38, ../../app/assets/scss/_base.scss */
+h2 {
+  margin: 0px 0px 0px !important;
+  padding: 1rem 0px 1rem;
+}
+
+/* line 1, ../../app/assets/scss/_main-view.scss */
+.photography {
+  background-image: url("../images/IMG_3101.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+/* line 7, ../../app/assets/scss/_main-view.scss */
+.web {
+  background-image: url("../images/web-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+/* line 13, ../../app/assets/scss/_main-view.scss */
+.video {
+  background-image: url("../images/video-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+/* line 19, ../../app/assets/scss/_main-view.scss */
+.photography h2,
+.web h2,
+.video h2 {
+  color: #fff;
+}
+
+/* line 1, ../../app/assets/scss/_view-animations.scss */
+.animate-view-container {
+  position: relative;
+  min-height: 900px;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* line 8, ../../app/assets/scss/_view-animations.scss */
+.view-section {
+  padding: 50px;
+}
+/* line 11, ../../app/assets/scss/_view-animations.scss */
+.view-section .btn {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+/* line 15, ../../app/assets/scss/_view-animations.scss */
+.view-section p {
+  padding: 20px;
+}
+
+/* line 60, ../../app/assets/scss/_view-animations.scss */
+.from-left,
+.from-right {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 900px;
+}
+
+/* line 71, ../../app/assets/scss/_view-animations.scss */
+.from-left.ng-enter,
+.from-right.ng-enter,
+.from-left.ng-leave,
+.from-right.ng-leave {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 80, ../../app/assets/scss/_view-animations.scss */
+.from-left.ng-enter {
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+  z-index: 100;
+}
+
+/* line 84, ../../app/assets/scss/_view-animations.scss */
+.from-left.ng-enter-active {
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* line 87, ../../app/assets/scss/_view-animations.scss */
+.from-left.ng-leave {
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  z-index: 99;
+}
+
+/* line 91, ../../app/assets/scss/_view-animations.scss */
+.from-left.ng-leave-active {
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+
+/* line 95, ../../app/assets/scss/_view-animations.scss */
+.from-right.ng-enter {
+  -moz-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+  z-index: 100;
+}
+
+/* line 99, ../../app/assets/scss/_view-animations.scss */
+.from-right.ng-enter-active {
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* line 102, ../../app/assets/scss/_view-animations.scss */
+.from-right.ng-leave {
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  z-index: 99;
+}
+
+/* line 106, ../../app/assets/scss/_view-animations.scss */
+.from-right.ng-leave-active {
+  -moz-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+}
+
+/* line 1, ../../app/assets/scss/_video.scss */
+.video-container {
+  position: relative;
+  height: 400px;
+  padding-bottom: 400px !important;
+}
+
+/* line 7, ../../app/assets/scss/_video.scss */
+video {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 1, ../../app/assets/scss/_mock.scss */
+html, body {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 10, ../../app/assets/scss/_mock.scss */
+h2 {
+  text-align: center;
+}
+
+/* line 15, ../../app/assets/scss/_mock.scss */
+section p {
+  text-align: center;
+  padding: 10px;
+}
+
+/* line 20, ../../app/assets/scss/_mock.scss */
+section ul {
+  text-align: center;
+}
+
+/* line 24, ../../app/assets/scss/_mock.scss */
+a {
+  color: black;
+}
+
+/* line 30, ../../app/assets/scss/_mock.scss */
+.contact .btn {
+  margin-bottom: 20px;
+}
+/* line 33, ../../app/assets/scss/_mock.scss */
+.contact li {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline;
+}
+
+/* line 1, ../../app/assets/scss/_resources.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../../app/assets/scss/_resources.scss */
+.resources nav {
+  background: #333333;
+}
+/* line 10, ../../app/assets/scss/_resources.scss */
+.resources h1 {
+  border-bottom: solid 3px #333333;
+}
+/* line 13, ../../app/assets/scss/_resources.scss */
+.resources .container {
+  margin-top: 60px;
+}
+/* line 16, ../../app/assets/scss/_resources.scss */
+.resources .site {
+  border-bottom: solid 1px #333333;
+  border-bottom-style: dashed;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
