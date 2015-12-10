@@ -1,0 +1,23 @@
+.photography{
+	background-image: url('../images/IMG_3101.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+.web{
+	background-image: url('../images/web-bg.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+.video{
+	background-image: url('../images/video-bg.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+.photography h2,
+.web h2,
+.video h2{
+	color: #fff;
+}
