@@ -12,3 +12,9 @@ video{
 }
 
 
+  .marquee{
+  position: relative;
+  z-index: 2;
+  background: rgba(#000,0.4);
+  min-height: 400px;
+}

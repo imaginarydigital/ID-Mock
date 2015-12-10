@@ -260,6 +260,14 @@ video {
   z-index: 1;
 }
 
+/* line 15, ../../app/assets/scss/_video.scss */
+.marquee {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.4);
+  min-height: 400px;
+}
+
 /* line 1, ../../app/assets/scss/_mock.scss */
 html, body {
   overflow-x: hidden;
