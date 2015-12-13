@@ -256,16 +256,24 @@ h2 {
 /* line 7, ../../app/assets/scss/_video.scss */
 video {
   position: absolute;
-  width: 100%;
+  max-width: 100%;
   z-index: 1;
+  height: auto;
 }
 
 /* line 15, ../../app/assets/scss/_video.scss */
 .marquee {
   position: relative;
   z-index: 2;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.8);
   min-height: 400px;
+  text-align: center;
+}
+/* line 22, ../../app/assets/scss/_video.scss */
+.marquee img {
+  position: absolute;
+  top: 25%;
+  transform: translate(-50%);
 }
 
 /* line 1, ../../app/assets/scss/_mock.scss */
