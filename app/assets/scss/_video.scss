@@ -15,13 +15,13 @@ video {
  .marquee {
 	 position: relative;
 	 z-index: 2;
-	 background: rgba(#000,0.8);
+	 background: rgba(#000,0.7);
 	 min-height: 400px;
 	 text-align: center;
 
   	img {
   	 position: absolute;
-  	 top: 25%;
+  	 top: 40%;
   	 transform: translate(-50%);
   }
 }
