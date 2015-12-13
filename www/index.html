@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Mockup</title>
+   
+   <link rel="stylesheet" href="css/materialize.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/main.css">
+</head>
+<style type="text/css">
+
+</style>
+<body ng-controller="MainController">
+
+
+
+<div class="video-container">
+  <video poster="images/poster.jpg" autoplay="true" loop>
+   <source src="video/Background_Video.mp4" type="video/mp4">
+   <source src="video/Background_Video.webmhd.webm" type="video/webm">
+  </video>
+
+  <div class="marquee">
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+  </div>
+</div>
+
+
+
+
+
+<div class="animate-view-container">
+  <ng-view class="animate-view" view-animation></ng-view>
+</div>
+
+
+
+  <footer class="page-footer valign-wrapper">
+    <div class="row">
+      <h2>Contact</h2>
+      <div class="valign center-align">
+        <button data-target="modal1" class="waves-effect waves-light btn modal-trigger">Send Us A Message</button>
+        <ul>
+          <li><a href=""><i class="fa fa-5x fa-facebook-official"></i></a></li>
+          <li><a href=""><i class="fa fa-5x fa-instagram"></i></a></li>
+          <li><a href=""><i class="fa fa-5x fa-youtube-square"></i></a></li>
+          <li><a href=""><i class="fa fa-5x fa-envelope-o"></i></a></li>
+       </ul>
+       <div class="footer-copyright">
+            © 2015 Imaginary Digital
+      </div>
+    </div>
+  </footer>
+
+
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <button href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</button>
+    </div>
+  </div>
+ 
+    
+  
+
+
+  
+
+
+
+    <script type="text/javascript" src="js/vendor.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
