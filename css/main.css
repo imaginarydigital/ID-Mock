@@ -246,6 +246,15 @@ h2 {
   transform: translate(100%, 0);
 }
 
+/* line 1, ../../app/assets/scss/_form.scss */
+.contactForm {
+  height: 400px;
+}
+/* line 3, ../../app/assets/scss/_form.scss */
+.contactForm .row {
+  margin-bottom: 20px !important;
+}
+
 /* line 1, ../../app/assets/scss/_video.scss */
 .video-container {
   position: relative;
