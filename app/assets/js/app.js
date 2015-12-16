@@ -1,6 +1,7 @@
  angular.module('app', [
   'ngRoute',
-  'ngAnimate'
+  'ngAnimate',
+  'ngMessages'
 ]);
 angular.module('app').config(function($interpolateProvider) {
   $interpolateProvider.startSymbol('{[{');

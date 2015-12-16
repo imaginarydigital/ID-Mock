@@ -111,6 +111,7 @@ module.exports = function(grunt) {
           '<%= config.src %>/assets/js/vendor/angular.min.js',
           '<%= config.src %>/assets/js/vendor/angular-route.min.js',
           '<%= config.src %>/assets/js/vendor/angular-animate.min.js',
+          '<%= config.src %>/assets/js/vendor/angular-messages.min.js',
           '<%= config.src %>/assets/js/vendor/materialize.min.js'
           // '<%= config.src %>/assets/js/vendor/bootstrap.min.js'
         ],
@@ -162,6 +163,12 @@ module.exports = function(grunt) {
             cwd: '<%= config.src %>/views',
             src: ['*.hbs'],
             dest: '<%= config.dev %>/views/'
+          },
+          {
+            expand: true,
+            cwd: '<%= config.src %>/includes',
+            src: ['*.hbs'],
+            dest: '<%= config.dev %>/includes/'
           }
         ]
       }
@@ -211,6 +218,12 @@ module.exports = function(grunt) {
     copy: {
       statics: {
         files: [
+          {
+            expand: true,
+            cwd: '<%= config.src %>/assets/includes',
+            src: ['**'],
+            dest: '<%= config.dev %>/includes'
+          },
           {
             expand: true,
             cwd: '<%= config.src %>/assets/fonts/',

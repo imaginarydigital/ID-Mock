@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Mockup</title>
-   {{!-- <link rel="stylesheet" href="css/vendor/bootstrap.min.css"> --}}
    <link rel="stylesheet" href="css/materialize.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="css/main.css">
 </head>
 <style type="text/css">
 
 </style>
-<body ng-controller="MainController">
+<body ng-controller="MainController as main">
 
 
 
@@ -27,14 +27,6 @@
     <img src="images/SmallLogo.png">
   </div>
 </div>
-
-{{!-- <div class="container-fluid">
-<div class="row">
-   <div class="row img-carousel">
-   
-  </div>
-</div>
-</div> --}}
 
 
 {{!-- view container --}}
@@ -64,11 +56,7 @@
 
   <div id="modal1" class="modal bottom-sheet">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <button href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</button>
+      {{> contact-form}}
     </div>
   </div>
  

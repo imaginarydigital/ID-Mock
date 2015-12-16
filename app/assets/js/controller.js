@@ -1,5 +1,13 @@
 function MainController ($scope, $location){
-	console.log($scope.hello);
+console.log('I work');
+	$scope.submitForm = function(isValid) {
+    
+    if (isValid) {
+      console.log('our form is amazing');
+    }else{
+      console.log('There was an error');
+    }
+  };
 }
 
 angular.module('app').controller('MainController', ['$scope', '$location', MainController]);
@@ -32,13 +40,3 @@ angular.module('app').directive('viewAnimation', function ($route) {
   };
 });
 
- //  <div id="modal1" class="modal bottom-sheet">
- //    <div class="modal-content">
- //      <h4>Modal Header</h4>
- //      <p>A bunch of text</p>
- //    </div>
- //    <div class="modal-footer">
- //      <button href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</button>
- //    </div>
- //  </div>
- // 
