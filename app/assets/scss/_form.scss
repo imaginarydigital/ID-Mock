@@ -1,6 +1,26 @@
 .contactForm{
-	height: 400px;
+	height: 420px;
 	.row{
 		margin-bottom: 20px !important;
+		@media (max-width: 600px){
+		margin-bottom: 0 !important;
+		}
 	}
+	p{
+		margin-top: 0;
+		color: #e53935;
+	}
+
+	input{
+		margin-bottom: 0;
+	}
+}
+
+.modal.bottom-sheet{
+	max-height: 60%;
+	// overflow-y: hidden;
+}
+
+.ng-invalid.ng-touched{
+	border-color: -moz-use-text-color -moz-use-text-color #E53935;
 }

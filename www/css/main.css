@@ -248,11 +248,36 @@ h2 {
 
 /* line 1, ../../app/assets/scss/_form.scss */
 .contactForm {
-  height: 400px;
+  height: 420px;
 }
 /* line 3, ../../app/assets/scss/_form.scss */
 .contactForm .row {
   margin-bottom: 20px !important;
+}
+@media (max-width: 600px) {
+  /* line 3, ../../app/assets/scss/_form.scss */
+  .contactForm .row {
+    margin-bottom: 0 !important;
+  }
+}
+/* line 9, ../../app/assets/scss/_form.scss */
+.contactForm p {
+  margin-top: 0;
+  color: #e53935;
+}
+/* line 14, ../../app/assets/scss/_form.scss */
+.contactForm input {
+  margin-bottom: 0;
+}
+
+/* line 19, ../../app/assets/scss/_form.scss */
+.modal.bottom-sheet {
+  max-height: 60%;
+}
+
+/* line 24, ../../app/assets/scss/_form.scss */
+.ng-invalid.ng-touched {
+  border-color: -moz-use-text-color -moz-use-text-color #E53935;
 }
 
 /* line 1, ../../app/assets/scss/_video.scss */

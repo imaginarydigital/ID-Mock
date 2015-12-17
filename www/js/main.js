@@ -1,6 +1,6 @@
 /*
  * ID Mock - r0.1.0
- * 2015-12-15 */
+ * 2015-12-17 */
 
  angular.module('app', [
   'ngRoute',
@@ -42,12 +42,17 @@ angular.module('app').config(['$routeProvider', function ($routeProvider){
   });
 }]);
 
-function MainController ($scope, $location){
-console.log('I work');
-	$scope.submitForm = function(isValid) {
+function MainController ($scope){
+
+	$scope.submitForm = function(contactForm) {
     
-    if (isValid) {
-      console.log('our form is amazing');
+    if (contactForm.$valid) {
+      $scope.contactForm.$setPristine();
+      $scope.contactForm.$setUntouched();
+      $('#contactModal').closeModal();
+      document.getElementById('contactForm').reset();
+
+      
     }else{
       console.log('There was an error');
     }
